@@ -1,2 +1,2 @@
-# Baekjun_prac
+# Baekjoon_prac
 just practice
