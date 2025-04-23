@@ -29,7 +29,7 @@ public class Backjoon_0423 {
 		}
 		System.out.printf("min: %d max: %d", min, max);
 		
-		if
+//		if
 		
 }
 	}
