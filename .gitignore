@@ -1,0 +1,14 @@
+ # Java build
+*.class
+bin/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.log
