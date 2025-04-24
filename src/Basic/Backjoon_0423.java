@@ -13,7 +13,7 @@ public class Backjoon_0423 {
 			nums[i] = scan.nextInt();
 			
 		}
-//		System.out.println(Arrays.toString(nums));
+		System.out.println(Arrays.toString(nums));
 		
 		int min = nums[0]; //7
 		int max = nums[0];
