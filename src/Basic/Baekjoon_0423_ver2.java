@@ -3,6 +3,7 @@ package Basic;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//BAEKJOON 5073
 public class Baekjoon_0423_ver2 {
 
 	public static void main(String[] args) {
