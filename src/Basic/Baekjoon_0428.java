@@ -23,7 +23,7 @@ public class Baekjoon_0428 {
 		}
 	}
 
-//		/* 아래같은 방식이 보통쓰이는 방식 위는 약간 혼종...? */
+//		/* 아래같은 방식이 보통쓰이는 방식 위는 약간 혼종..? */
 
 //		Scanner scan = new Scanner(System.in);
 //			ArrayList<Integer> list = new ArrayList<>(); // 동적 배열
