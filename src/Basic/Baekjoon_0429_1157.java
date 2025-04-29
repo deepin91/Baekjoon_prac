@@ -39,21 +39,21 @@ public class Baekjoon_0429_1157 {
 				mc = x;
 			}
 		}
-//	}
-//}
-//		
-		int same = 0;
-		for(int v = 0; v < c.length; v++) {
-			if(c[v] == max) {
-				same++;
-			}
-		}
-		if(same >= 2) {
-			System.out.println("?");
-		} else {
-			System.out.println(arr[mc]);
-		}
 	}
 }
+//		
+//		int same = 0;
+//		for(int v = 0; v < c.length; v++) {
+//			if(c[v] == max) {
+//				same++;
+//			}
+//		}
+//		if(same >= 2) {
+//			System.out.println("?");
+//		} else {
+//			System.out.println(arr[mc]);
+//		}
+//	}
+//}
 
 //		System.out.println(cnt);
