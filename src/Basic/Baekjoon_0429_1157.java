@@ -30,7 +30,6 @@ public class Baekjoon_0429_1157 {
 
 			}
 		}
-
 		int max = 0;
 		int mc = 0;
 		for (int x = 0; x < c.length; x++) {
