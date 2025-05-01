@@ -34,7 +34,7 @@ public class Baekjoon_0429_v2 {
 				maxCnt2 = cnt.getValue();
 				maxChar = cnt.getKey();
 			}
-		}
+		}//위에 뽑아서 안해도될거같긴한데 가 아니네
 
 		if (maxCnt == maxCnt2 && maxChar != maxChr) {
 			System.out.println("?");
