@@ -16,7 +16,7 @@ public class Baekjoon_0429_v2 {
 		char[] alphabet = new char[l];
 
 		for (int i = 0; i < l; i++) {
-//			words = words.toUpperCase();
+//			words = words.toUpperCase();  <-여기 있으면 쓸데없이 계속 반복됨
 			alphabet[i] = words.charAt(i);
 		}
 
@@ -48,7 +48,6 @@ public class Baekjoon_0429_v2 {
 			System.out.println(maxChar);
 		}
 	}
-
 }
 // 기존 코드 후반부는 최대등장 문자와 최대 중복횟수만 구함 
 // => 중복된 최대 횟수 구함 : maxCnt
