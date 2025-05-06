@@ -8,9 +8,9 @@ import java.util.List;
 
 public class Baekjoon_0430_8979 {
 	public static void main(String[] args) throws IOException {
-
+		
 		List<Integer> nationsAndRank = new ArrayList<Integer>();
-		List<Integer> medals = new ArrayList<Integer>();
+		ArrayList<Medals> medals = new ArrayList<>();
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -29,33 +29,48 @@ public class Baekjoon_0430_8979 {
 //			System.out.println(nationsAndRank);
 
 			int n = nationsAndRank.get(0);
-//			int[] arr = new int[n];
+			int[] arr = new int[n];
 //			for (int o = 0; o < n; o++) {
-				
-				
-				for (int i = 0; i < n; i++) {
-					String str2 = br.readLine();
-					if (str == null || str.trim().equals(""))
-						break;
-					String[] lists = str2.split(" ");
-					int nc = Integer.parseInt(lists[0]);
-					int gold = Integer.parseInt(lists[1]);
-					int silver = Integer.parseInt(lists[2]);
-					int bronze = Integer.parseInt(lists[3]);
-					
-					medals.add(nc);
-					medals.add(gold);
-					medals.add(silver);
-					medals.add(bronze);
-//			int []arr1 = {gold, silver, bronze};
-				}
+
+			for (int i = 0; i < n; i++) {
+				String str2 = br.readLine();
+//				if (str == null || str.trim().equals(""))
+//					break;
+				String[] lists = str2.split(" ");
+				int nc = Integer.parseInt(lists[0]);
+				int gold = Integer.parseInt(lists[1]);
+				int silver = Integer.parseInt(lists[2]);
+				int bronze = Integer.parseInt(lists[3]);
+
+				medals.add(new Medals(nc, gold, silver, bronze));
+//				medals.add(nc);
+//				medals.add(gold);
+//				medals.add(silver);
+//				medals.add(bronze);
+//				int[] arr = {nc, gold, silver, bronze };
 			}
+			
+		}
 		System.out.println(nationsAndRank);
 		System.out.println(medals);
-		}
-		
 	}
 
+
+}
+
+class Medals{
+	int nc;
+	int gold; 
+	int silver;
+	int bronze;
+	
+	public Medals(int nc, int gold, int silver, int bronze) {
+		this.nc = nc;
+		this.gold = gold;
+		this.silver = silver;
+		this.bronze = bronze;
+	}
+}
 
 //	올림픽은 참가에 의의가 있기에 공식적으로는 국가간 순위를 정하지 않는다. 그러나, 많은 사람들이 자신의 국가가 얼마나 잘 하는지에 관심이 많기 때문에 비공식적으로는 국가간 순위를 정하고 있다. 두 나라가 각각 얻은 금, 은, 동메달 수가 주어지면, 보통 다음 규칙을 따라 어느 나라가 더 잘했는지 결정한다.
 //
