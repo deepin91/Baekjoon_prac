@@ -4,11 +4,31 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+class Medals {
+	int nc;
+	int gold;
+	int silver;
+	int bronze;
+
+	public Medals(int nc, int gold, int silver, int bronze) {
+		this.nc = nc;
+		this.gold = gold;
+		this.silver = silver;
+		this.bronze = bronze;
+	}
+
+//	@Override
+//	public String toString() {
+//		return nc+" "+ gold +" "+silver+" "+bronze;
+//	}
+}
 
 public class Baekjoon_0430_8979 {
 	public static void main(String[] args) throws IOException {
-		
+
 		List<Integer> nationsAndRank = new ArrayList<Integer>();
 		ArrayList<Medals> medals = new ArrayList<>();
 
@@ -49,26 +69,25 @@ public class Baekjoon_0430_8979 {
 //				medals.add(bronze);
 //				int[] arr = {nc, gold, silver, bronze };
 			}
-			
+			int golds;
+			int emp = 0;
+			int max = 0;
+			int min = 0;
+//			int [] nmb = new int[n];
+			for (Medals m : medals) {
+				golds = m.gold;
+//				emp = golds;
+				if (golds > emp) {
+					max = golds;
+					emp = max;
+				}if(golds < emp){
+					max = emp;
+					min = golds;
+				}
+
+			}
+			System.out.printf("Gold - max: %d, min: %d", max, min);
 		}
-		System.out.println(nationsAndRank);
-		System.out.println(medals);
-	}
-
-
-}
-
-class Medals{
-	int nc;
-	int gold; 
-	int silver;
-	int bronze;
-	
-	public Medals(int nc, int gold, int silver, int bronze) {
-		this.nc = nc;
-		this.gold = gold;
-		this.silver = silver;
-		this.bronze = bronze;
 	}
 }
 
